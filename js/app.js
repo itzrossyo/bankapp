@@ -1,6 +1,7 @@
 const balance = document.getElementById("balance");
-const income = document.getElementById("income");
-const expense = document.getElementById("expense");
+const inflow = document.getElementById("income");
+const outflow = document.getElementById("expense"); // fix ID here
+const list = document.getElementById("list");
 const form = document.getElementById("form");
 const text = document.getElementById("text");
 const amount = document.getElementById("amount");
@@ -19,7 +20,10 @@ if (localStorageTransactions !== null) {
 // Add transaction function
 function addTransaction(e) {
   e.preventDefault();
-  // Condition to check if the fields are empty
+
+  const text = document.getElementById("text");
+  const amount = document.getElementById("amount");
+
   if (text.value.trim() === "" || amount.value.trim() === "") {
     document.getElementById("error_msg").innerText =
       "Error: Transaction amount and text are required";
@@ -36,7 +40,6 @@ function addTransaction(e) {
 
     transactions.push(transaction);
 
-    // Add transaction to document object model (DOM) - for local storage
     addTransactionDOM(transaction);
     updateValues();
     updateLocalStorage();
@@ -71,7 +74,7 @@ function addTransactionDOM(transaction) {
   list.appendChild(item);
 }
 
-// Update balance, income and expense
+// Update balance, inflow and outflow
 function updateValues() {
   const amounts = transactions.map((transaction) => transaction.amount);
 
@@ -87,10 +90,10 @@ function updateValues() {
   const total = income - expense;
 
   if (balance) {
-    balance.innerText = `$${total}`;
+    balance.innerText = `£${total}`;
   }
-  income.innerText = `$${income}`;
-  expense.innerText = `$${expense}`;
+  inflow.innerText = `£${income}`;
+  outflow.innerText = `£${expense}`;
 }
 
 // Remove transaction by id
@@ -103,7 +106,10 @@ function removeTransaction(id) {
   // Restart the whole app
   Start();
 }
-
+window.onload = function () {
+  form.addEventListener("submit", addTransaction);
+  loadTransactions();
+};
 // Update local storage function
 function updateLocalStorage() {
   localStorage.setItem("transactions", JSON.stringify(transactions));

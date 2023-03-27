@@ -111,3 +111,43 @@ input {
   cursor: pointer;
   font-weight: bolder;
 }
+/*styling the form*/
+.delete-btn {
+  background: none;
+  color: red;
+  border-radius: 15px;
+  border: none;
+  float: right;
+}
+
+ul {
+  list-style: none;
+  display: inline;
+}
+ul,
+li {
+  font-weight: bolder;
+  font-size: 17px;
+  text-align: left;
+}
+#error_msg {
+  color: red;
+  background-color: #393e46;
+  font-weight: bolder;
+  padding: 0 10px;
+}
+
+.list {
+  color: #eeeeee;
+}
+.minus,
+.plus {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #00adb5;
+}
+
+.minus:hover,
+.-plus:hover {
+  background-color: #222831;
+  cursor: pointer;
+}
