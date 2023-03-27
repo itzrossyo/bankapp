@@ -28,6 +28,25 @@ body {
   text-align: center;
   width: 500px;
 }
+.logout {
+  display: flex;
+  justify-content: right;
+  width: 10%;
+  font-size: 16px;
+  float: top;
+}
+
+.logout:hover {
+  cursor: pointer;
+  color: #00adb5;
+}
+.logout-link {
+  text-decoration: none;
+  color: #00adb5;
+}
+.logout-link:visited {
+  color: #00adb5;
+}
 h1 {
   letter-spacing: 3px;
   margin: 10px 0 10px;
