@@ -48,8 +48,16 @@ body {
   color: #00adb5;
 }
 .nav-menu:hover {
-  color: #00adb5;
+  color: #23c6cf;
   cursor: pointer;
+}
+.nav-menu:visited {
+  color: #00adb5;
+}
+.nav-menu,
+a {
+  text-decoration: none;
+  color: #00adb5;
 }
 
 h1 {
