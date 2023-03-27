@@ -24,9 +24,9 @@
           <input type="text" id="text" onfocus="this.value=''" placeholder="Enter text" />
         </div>
         <div class="form-control">
-          <input type="number" id="Amount" onfocus="this.value=''" placeholder="Enter Value" />
+          <input type="number" id="amount" onfocus="this.value=''" placeholder="Enter Value" />
         </div>
-        <button class="button">Add transaction</button>
+        <button type="submit" class="button">Add transaction</button>
       </form>
       <br>
       <div class="income-expnse">
@@ -39,16 +39,17 @@
           <div class="expense" id="expense">£0.00</div>
         </div>
         <div class="bg-dark">
-          <h4>balance</h4>
+          <h4>Balance</h4>
           <div id="balance">£0.00</div>
         </div>
       </div>
       <h3>History</h3>
-      <!--dyamically dispalaying the list of transactions-->
-      <utl class="list" id="list"></utl>
+      <!-- dynamically displaying the list of transactions -->
+      <ul class="list" id="list"></ul>
     </div>
   </div>
-  <script src="./jd/app.js"></script>
+  <script src="./js/app.js"></script>
 </body>
+
 
 </html>

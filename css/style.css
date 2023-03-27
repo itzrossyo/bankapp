@@ -102,4 +102,12 @@ input {
   border-radius: 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+.button:hover {
+  color: #00adb5;
+  background-color: #eeeeee;
+  cursor: pointer;
+  font-weight: bolder;
 }
