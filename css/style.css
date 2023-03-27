@@ -38,7 +38,7 @@ body {
 
 .logout:hover {
   cursor: pointer;
-  color: #00adb5;
+  color: #23c6cf;
 }
 .logout-link {
   text-decoration: none;
@@ -47,6 +47,11 @@ body {
 .logout-link:visited {
   color: #00adb5;
 }
+.nav-menu:hover {
+  color: #00adb5;
+  cursor: pointer;
+}
+
 h1 {
   letter-spacing: 3px;
   margin: 10px 0 10px;

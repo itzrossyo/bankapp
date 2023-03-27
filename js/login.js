@@ -6,7 +6,7 @@ loginForm.addEventListener("submit", function (e) {
   const username = document.getElementById("username").value;
   const password = document.getElementById("password").value;
 
-  if (username === "myusername" && password === "mypassword") {
+  if (username === "Ross" && password === "password") {
     localStorage.setItem("loginToken", "mysecrettoken");
 
     console.log("Logged in!");
