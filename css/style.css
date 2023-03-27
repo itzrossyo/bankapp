@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #222831;
+}
+
+.title {
+  background-color: #393e46;
+  opacity: 0.8;
+  text-align: center;
+  color: #00adb5;
+}
+
+.container {
+  background-color: #393e46;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px #00adb5;
+  position: relative;
+  text-align: center;
+  width: 500px;
+}
+h1 {
+  letter-spacing: 3px;
+  margin: 10px 0 10px;
+  text-transform: uppercase;
+}
+
+h3 {
+  border-bottom: 1px solid #00adb5;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  text-align: left;
+  color: #eeeeee;
+}
+h4 {
+  margin: 0;
+  text-transform: capitalize;
+  color: #eeeeee;
+}
+#balance {
+  color: #393e46;
+}
+.income-expnse {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.income-expnse > div {
+  flex: 1;
+  text-align: center;
+}
+
+.income,
+.expense,
+#balance {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-weight: bolder;
+}
+.income {
+  color: green;
+}
+
+.expense {
+  color: red;
+}
+
+#balance {
+  color: rgb(78, 78, 225);
+}
+.bg-dark {
+  background-color: #393e46;
+  margin: 0 2px;
+  border-radius: 4px;
+}
+input {
+  border: 1px solid#eeeeee;
+  padding: 5px;
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 1px 2px 1px #00adb5;
+}
+
+.button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 6px 0;
+  outline: none;
+  background-color: #00adb5;
+  color: #eeeeee;
+  border-radius: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
